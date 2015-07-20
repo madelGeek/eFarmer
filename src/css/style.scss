@@ -1,0 +1,317 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "mixins/font-face";
+
+// Imports fonts
+@include font-face("../fonts/", "open-sans", 300);
+@include font-face("../fonts/", "open-sans", 400);
+@include font-face("../fonts/", "open-sans", 600);
+@include font-face("../fonts/", "open-sans", 700);
+@include font-face("../fonts/", "open-sans", 800);
+
+// Define variables
+$green: #36873a;
+$deep_green: #419f46;
+$light_green: #77ae79;
+$orange: #d99703;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.header.navbar-default {
+  height: 90px;
+  background-color: $green;
+  border-bottom: 10px solid $light_green;
+}
+
+.logo-img {
+  position: absolute;
+}
+
+.brand-text {
+  color: #ffffff;
+  margin-left: 80px;
+  line-height: 50px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 300;
+  padding-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li.active > a {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: $green;
+  font-weight: 400;
+}
+
+.navbar-default .navbar-nav > li.active > a:hover,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #e69e02;
+  text-decoration: none;
+  background-color: $green;
+}
+
+.btn-menu {
+  margin-top: 23px;
+}
+
+.header-bg {
+  background: url("../../img/header_bg.jpg");
+  background-size: cover;
+  min-height: 563px;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.tablet-header {
+  margin-top: 15%;
+  width: 383px;
+}
+
+.h1-orange-bg {
+  margin-top: 50%;
+}
+
+.span-orange-bg {
+  background-color: #e69e02;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.text-opacity {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 5px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.btn-main {
+  width: 240px;
+  height: 50px;
+  text-transform: uppercase;
+  line-height: 35px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  margin: 0 15px 20px;
+  font-weight: 700;
+  background-color: #c2c2c2;
+  color: #777777;
+  border-bottom: 5px solid #b3b3b3;
+}
+
+.btn-main.btn-brand {
+  background-color: $deep_green;
+  color: #ffffff;
+  border-bottom: 5px solid $green;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-bg {
+  background-color: #202020;
+  padding: 90px 0 110px 0;
+}
+
+.carousel-indicators {
+  bottom: -100px
+}
+
+.carousel-indicators .active {
+  background-color: $green;
+  border: 1px solid $green;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+}
+
+.carousel-indicators li {
+  background-color: #444444;
+  border: 1px solid #444444;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+
+}
+
+.h2-green {
+  color: $green;
+  margin: 60px 0 30px;
+  font-weight: 600;
+}
+
+.white-text {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.features-bg {
+  background-color: #f3f3f3;
+}
+
+.white-bg {
+  background-color: #ffffff;
+  color: #7f8c8c;
+  margin: 65px 10px;
+  border-radius: 5px;
+  border-bottom: 2px solid #e5e6e6;
+  padding: 15px;
+  min-height: 314px;
+}
+
+.h4-grey {
+  font-weight: 800;
+  padding: 20px 0;
+}
+
+.download-link {
+  padding: 0 0 25px 0;
+  color: #438e46;
+  text-decoration: underline;
+  display: block;
+}
+
+@mixin btn-download($left, $color) {
+  position: absolute;
+  bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 0;
+  font-size: 1.2em;
+  left: 50%;
+  margin-left: $left;
+  color: $color;
+}
+
+.h1-green {
+  text-transform: uppercase;
+  color: $green;
+  margin: 35px 0 0 0;
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+.price-block {
+  background-color: $deep_green;
+  color: #ffffff;
+  min-height: 460px;
+  border-bottom: 5px solid #9dcc9f;
+  margin: 20px 0;
+
+  p {
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  hr {
+    border: none;
+    width: 100%;
+    height: 2px;
+    color: #3c9341;
+    margin: 0;
+    background-color: #3c9341
+  }
+
+  .btn-download {
+    position: absolute;
+    bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 0;
+    font-size: 1.2em;
+    left: 50%;
+    margin-left: -45px;
+    color: $deep_green;
+  }
+}
+
+.price-block.free {
+  background-color: #eca403;
+  border-bottom: 5px solid #f2ce7e;
+
+  hr {
+    color: $orange;
+    background-color: $orange;
+  }
+
+  .btn-download {
+    margin-left: -50px;
+    color: #edaa14;
+  }
+
+}
+
+.price {
+  padding: 20px 0;
+  min-height: 212px;
+  font-weight: 700;
+  background-color: #3c9341;
+
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+
+  p {
+    font-weight: bold;
+    padding: 0 15px;
+    font-size: 1.2em;
+  }
+}
+
+
+.price.free {
+  background-color: $orange;
+}
+
+.small-h1 {
+  font-size: 0.5em;
+}
+
+.green-bg {
+  background-color: $green;
+}
+
+.write-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 15px 0;
+}
+
+.margin-footer {
+  margin: 25px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse {
+    background-color: $light_green;
+    max-height: 500px;
+  }
+
+  .h1-orange-bg {
+    margin-top: 10%;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "farmer",
+  "version": "0.0.1",
+  "authors": [
+    "madelgeek <daria.gorchylina@gmail.com>"
+  ],
+  "description": "Test task for eFarmer",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
